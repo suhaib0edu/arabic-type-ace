@@ -105,7 +105,7 @@ export default function Home() {
                 value={userInput}
                 onChange={handleChange}
                 placeholder="اكتب العبارة هنا..."
-                className="w-full max-w-md mb-4 bg-secondary text-primary rounded-md"
+                className="w-full max-w-md mb-4 bg-secondary text-primary rounded-lg"
                 ref={inputRef}
                 dir="rtl"
             />
@@ -115,7 +115,7 @@ export default function Home() {
                     النتيجة: <span className="font-semibold text-primary">{score}</span>
                 </div>
                 <div className="text-lg">
-                    الوقت: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)}ث</span>
+                    الوقت: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)} ثانية</span>
                 </div>
             </div>
         </div>
