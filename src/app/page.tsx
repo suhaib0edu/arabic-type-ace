@@ -59,8 +59,8 @@ export default function Home() {
             setTimeElapsed(0);
 
             toast({
-                title: "Typo!",
-                description: "Keep practicing to improve your accuracy.",
+                title: "خطأ!",
+                description: "استمر في التدريب لتحسين دقتك.",
                 variant: "destructive",
             });
 
@@ -77,8 +77,8 @@ export default function Home() {
             setTimeElapsed(0);
 
             toast({
-                title: "Correct!",
-                description: `Well done! You typed ${wpm} words per minute.`,
+                title: "أحسنت!",
+                description: `أحسنت! لقد كتبت ${wpm} كلمة في الدقيقة.`,
             });
 
             if (inputRef.current) {
@@ -95,7 +95,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4">
-            <h1 className="text-3xl font-bold mb-4 text-primary">Arabic Type Ace</h1>
+            <h1 className="text-3xl font-bold mb-4 text-primary">مُعلّم الكتابة بالعربية</h1>
 
             <div className="mb-8 p-4 rounded-lg shadow-md w-full max-w-md text-center">
                 <p className="text-xl font-semibold text-secondary">{phrase}</p>
@@ -105,7 +105,7 @@ export default function Home() {
                 type="text"
                 value={userInput}
                 onChange={handleChange}
-                placeholder="Type the phrase here..."
+                placeholder="اكتب العبارة هنا..."
                 className="w-full max-w-md mb-4 bg-secondary text-primary"
                 ref={inputRef}
                 dir="rtl"
@@ -113,10 +113,10 @@ export default function Home() {
 
             <div className="flex justify-between w-full max-w-md mb-4">
                 <div className="text-lg">
-                    Score: <span className="font-semibold text-primary">{score}</span>
+                    النتيجة: <span className="font-semibold text-primary">{score}</span>
                 </div>
                 <div className="text-lg">
-                    Time: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)}s</span>
+                    الوقت: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)}s</span>
                 </div>
             </div>
         </div>
