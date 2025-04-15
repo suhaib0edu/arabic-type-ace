@@ -26,7 +26,7 @@ const getRandomPhrase = () => {
 };
 
 export default function Home() {
-    const [phrase, setPhrase] = useState(getRandomPhrase());
+    const [phrase, setPhrase] = useState("");
     const [userInput, setUserInput] = useState("");
     const [score, setScore] = useState(0);
     const [accuracy, setAccuracy] = useState(100);
@@ -34,6 +34,10 @@ export default function Home() {
     const [timeElapsed, setTimeElapsed] = useState(0);
     const inputRef = useRef<HTMLInputElement>(null);
     const { toast } = useToast();
+
+    useEffect(() => {
+        setPhrase(getRandomPhrase());
+    }, []);
 
     useEffect(() => {
         if (startTime !== null) {
