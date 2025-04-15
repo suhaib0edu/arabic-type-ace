@@ -26,7 +26,7 @@ const getRandomPhrase = () => {
 };
 
 export default function Home() {
-    const [phrase, setPhrase] = useState("");
+    const [phrase, setPhrase] = useState(getRandomPhrase());
     const [userInput, setUserInput] = useState("");
     const [score, setScore] = useState(0);
     const [accuracy, setAccuracy] = useState(100);
@@ -36,8 +36,9 @@ export default function Home() {
     const { toast } = useToast();
 
     useEffect(() => {
-        setPhrase(getRandomPhrase());
+      inputRef.current?.focus();
     }, []);
+
 
     useEffect(() => {
         if (startTime !== null) {
@@ -91,14 +92,8 @@ export default function Home() {
         }
     };
 
-    useEffect(() => {
-        if (inputRef.current) {
-            inputRef.current.focus();
-        }
-    }, []);
-
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 rounded-xl">
             <h1 className="text-3xl font-bold mb-4 text-primary">مُعلّم الكتابة بالعربية</h1>
 
             <div className="mb-8 p-4 rounded-lg shadow-md w-full max-w-md text-center">
@@ -110,7 +105,7 @@ export default function Home() {
                 value={userInput}
                 onChange={handleChange}
                 placeholder="اكتب العبارة هنا..."
-                className="w-full max-w-md mb-4 bg-secondary text-primary"
+                className="w-full max-w-md mb-4 bg-secondary text-primary rounded-md"
                 ref={inputRef}
                 dir="rtl"
             />
