@@ -8,43 +8,43 @@ body {
 
 @layer base {
   :root {
-    --background: 27 84% 61%;  /* Soft Orange */
-    --foreground: 24 9% 10%;   /* Dark Brown */
-    --card: 30 80% 55%;        /* Medium Orange */
-    --card-foreground: 24 9% 10%;
-    --popover: 45 95% 70%;       /* Light Yellow */
-    --popover-foreground: 24 9% 10%;
-    --primary: 10 70% 50%;      /* Vivid Red */
-    --primary-foreground: 55 100% 95%; /* Pale Yellow */
-    --secondary: 35 80% 40%;     /* Darker Orange */
-    --secondary-foreground: 55 100% 95%;
-    --muted: 40 75% 80%;        /* Light Orange */
-    --muted-foreground: 25 10% 40%;
-    --accent: 50 90% 85%;       /* Very Light Yellow */
-    --accent-foreground: 24 9% 10%;
-    --destructive: 0 70% 50%;   /* Strong Red */
-    --destructive-foreground: 55 100% 95%;
-    --border: 30 50% 45%;       /* Brownish Orange */
-    --input: 45 85% 90%;        /* Very Light Yellow */
-    --ring: 15 65% 55%;        /* Red-Orange */
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.75rem;
-    --sidebar-background: 27 84% 61%;
-    --sidebar-foreground: 24 9% 10%;
-    --sidebar-primary: 10 70% 50%;
-    --sidebar-primary-foreground: 55 100% 95%;
-    --sidebar-accent: 50 90% 85%;
-    --sidebar-accent-foreground: 24 9% 10%;
-    --sidebar-border: 30 50% 45%;
-    --sidebar-ring: 15 65% 55%;
+    --background: 24 9% 10%;  /* Dark Brown */
+    --foreground: 55 100% 95%; /* Pale Yellow */
+    --card: 22 20% 20%;       /* Slightly Lighter Dark Gray */
+    --card-foreground: 50 100% 95%;
+    --popover: 25 25% 25%;      /* Medium Dark Gray */
+    --popover-foreground: 50 100% 95%;
+    --primary: 15 65% 55%;     /* Red-Orange */
+    --primary-foreground: 24 9% 10%;
+    --secondary: 28 30% 30%;    /* Light Dark Gray */
+    --secondary-foreground: 24 9% 10%;
+    --muted: 25 10% 40%;       /* Darker Gray */
+    --muted-foreground: 40 75% 80%;
+    --accent: 26 35% 35%;      /* Very Dark Gray */
+    --accent-foreground: 50 100% 95%;
+    --destructive: 0 50% 40%;  /* Dark Red */
+    --destructive-foreground: 50 100% 95%;
+    --border: 23 25% 25%;      /* Darker Gray */
+    --input: 24 30% 30%;       /* Light Dark Gray */
+    --ring: 10 70% 50%;      /* Vivid Red */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+     --sidebar-background: 20 15% 15%;
+    --sidebar-foreground: 50 100% 95%;
+    --sidebar-primary: 15 65% 55%;
+    --sidebar-primary-foreground: 24 9% 10%;
+    --sidebar-accent: 26 35% 35%;
+    --sidebar-accent-foreground: 50 100% 95%;
+    --sidebar-border: 23 25% 25%;
+    --sidebar-ring: 10 70% 50%;
+    
   }
   .dark {
-    --background: 20 15% 15%;  /* Dark Gray */
-    --foreground: 50 100% 95%; /* Pale Yellow */
+    --background: 24 9% 10%;  /* Dark Brown */
+    --foreground: 55 100% 95%; /* Pale Yellow */
     --card: 22 20% 20%;       /* Slightly Lighter Dark Gray */
     --card-foreground: 50 100% 95%;
     --popover: 25 25% 25%;      /* Medium Dark Gray */
