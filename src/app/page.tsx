@@ -116,7 +116,7 @@ export default function Home() {
                     النتيجة: <span className="font-semibold text-primary">{score}</span>
                 </div>
                 <div className="text-lg">
-                    الوقت: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)}s</span>
+                    الوقت: <span className="font-semibold text-primary">{(timeElapsed / 1000).toFixed(2)}ث</span>
                 </div>
             </div>
         </div>
